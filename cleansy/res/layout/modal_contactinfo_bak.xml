@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/contentarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#fff" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:background="#aad259" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#fff"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="contact information"
+                        android:textColor="#333"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/editfirstname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/contactfirstnamehint"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+
+                <EditText
+                    android:id="@+id/editlastname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/contactlastnamehint"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+
+                <EditText
+                    android:id="@+id/editemail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/contactemailhint"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+
+                <EditText
+                    android:id="@+id/editphone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/contactphonehint"
+                    android:inputType="phone"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/modal_contactaccount_bottom_note" />
+        
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/nextbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#aad259"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/continuebutton"
+                android:gravity="center"
+                android:onClick="ClickedContinueButton"
+                android:text="DONE"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

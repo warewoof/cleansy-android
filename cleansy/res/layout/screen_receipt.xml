@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity" >
+
+    <ImageView
+        android:id="@+id/chooseaddressscreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/whitebackground" />
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/activity_title_bar_background" >
+
+        <ImageView
+            android:id="@+id/gearbutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:clickable="true"
+            android:onClick="ClickedOptionsMenuButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/gearbutton" />
+
+        <TextView
+            android:id="@+id/customTitleFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/activity_title_bar_text"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nextbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/activity_bottom_bar" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/continuebutton"
+            android:gravity="center"
+            android:onClick="ClickedContinueButton"
+            android:text="@string/receipt_next_button_text"
+            android:textColor="@color/activity_bottom_bar_text"
+            android:textSize="@dimen/activity_bottom_bar_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_bottom_bar_height"
+        android:layout_marginTop="@dimen/activity_title_bar_height" >
+
+        <LinearLayout
+            android:id="@+id/contentarea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/activity_area_text_line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="#fff"
+                    android:paddingLeft="@dimen/activity_area_text_padding_leftright"
+                    android:paddingRight="@dimen/activity_area_text_padding_leftright"
+                    android:text="Thank You"
+                    android:textColor="@color/activity_area_text_color"
+                    android:textSize="@dimen/activity_area_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                android:text="@string/receiptsection1text"
+                android:textColor="@color/cleaning_service_description_text"
+                android:textSize="@dimen/cleaning_servicedescription_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                android:text="@string/receiptsection2text"
+                android:textColor="@color/cleaning_service_description_text"
+                android:textSize="@dimen/cleaning_servicedescription_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                android:text="@string/receiptsection3text"
+                android:textColor="@color/cleaning_service_description_text"
+                android:textSize="@dimen/cleaning_servicedescription_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                android:text="@string/receiptsection4text"
+                android:textColor="@color/cleaning_service_description_text"
+                android:textSize="@dimen/cleaning_servicedescription_text_size" />
+
+            <Button
+                android:id="@+id/registrationbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/greenbutton"
+                android:gravity="center"
+                android:onClick="ClickedRegisterButton"
+                android:paddingLeft="@dimen/appointment_buttons_left_padding"
+                android:singleLine="true"
+                android:text="@string/receiptsectionregisterbuttontext"
+                android:textColor="@color/appointment_buttons_text_color"
+                android:textSize="@dimen/appointment_buttons_text_size" />
+
+            <TextView
+                android:id="@+id/registrationtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                android:text="@string/receiptsection5text"
+                android:textColor="@color/cleaning_service_description_text"
+                android:textSize="@dimen/cleaning_servicedescription_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

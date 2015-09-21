@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="oval">
+    <corners android:radius="10dip"/>
+    <stroke android:color="@color/cleaning_question_mark_border" android:width="2dip"/>
+    <padding
+        android:top="1dp"
+        android:bottom="1dp"
+        android:right="10dp"
+        android:left="10dp"  >
+    </padding>
+    <solid android:color="@android:color/white"/>
+</shape>

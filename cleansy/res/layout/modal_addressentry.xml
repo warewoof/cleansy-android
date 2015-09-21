@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Dummy item to prevent focus workaround -->
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autotext"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:nextFocusLeft="@id/autotext"
+        android:nextFocusUp="@id/autotext"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/contentarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#fff" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:background="#aad259" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#fff"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="address"
+                        android:textColor="#333"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/editstreet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/street1hint"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+
+                <EditText
+                    android:id="@+id/editstreet2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/street2hint"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+
+                <EditText
+                    android:id="@+id/editcity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/cityhint"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+
+                <EditText
+                    android:id="@+id/editzip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/postalhint"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+<!-- 
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:background="#aad259" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="#fff"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="phone"
+                        android:textColor="#333"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+ -->
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/modal_address_entry_bottom_note" />
+
+                <EditText
+                    android:id="@+id/editnotes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextfield"
+                    android:hint="@string/noteshint"
+                    android:inputType="textShortMessage"
+                    android:padding="@dimen/modal_chooseaddressmanual_edit_text_field_padding"
+                    android:textColorHint="@color/hintColor" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/nextbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#aad259"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/continuebutton"
+                android:gravity="center"
+                android:onClick="ClickedContinueButton"
+                android:text="DONE"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

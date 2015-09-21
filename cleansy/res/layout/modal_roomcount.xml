@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout 
+	    android:id="@+id/contentarea"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="40dp"
+	    android:layout_marginBottom="40dp"
+	    android:background="#fff"	    
+        android:layout_alignParentTop="true" >
+	    
+	    <RelativeLayout 
+	        android:id="@+id/headertext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	       	android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp" >
+	        <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="15dp"
+	            android:background="#aad259" />
+	    	<TextView 
+	    	    android:id="@+id/titleText"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="number of rooms"
+	    	    android:textColor="#333"
+	    	    android:textSize="17sp"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginTop="2dp"
+	    	    android:layout_marginLeft="40dp"
+	    	    android:paddingLeft="4dp"
+	    	    android:paddingRight="4dp"
+	    	    android:background="#fff"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_below="@id/headertext"
+	        android:layout_marginTop="20dp"
+	       	android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp"
+	    	android:orientation="horizontal" >
+            <TextView 
+                android:id="@+id/count0"
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"	
+	        	android:layout_margin="@dimen/modal_chooseroomcount_text_margin"
+	        	android:clickable="true"
+	        	android:onClick="clickedCount"
+	        	android:text="0"
+	        	android:textColor="@drawable/modalhighlighttext"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/modal_choosetime_time_textSize"
+	        	android:background="@drawable/modalhighlightbackground" />
+            <TextView
+                android:id="@+id/count1" 
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"	        	
+	        	android:layout_margin="@dimen/modal_chooseroomcount_text_margin"
+	        	android:clickable="true"
+	        	android:onClick="clickedCount"
+	        	android:text="1"
+	        	android:textColor="@drawable/modalhighlighttext"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/modal_choosetime_time_textSize"
+	        	android:background="@drawable/modalhighlightbackground" />
+            <TextView 
+                android:id="@+id/count2"
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"	        	
+	        	android:layout_margin="@dimen/modal_chooseroomcount_text_margin"
+	        	android:clickable="true"
+	        	android:onClick="clickedCount"
+	        	android:text="2"
+	        	android:textColor="@drawable/modalhighlighttext"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/modal_choosetime_time_textSize"
+	        	android:background="@drawable/modalhighlightbackground" />
+            <TextView 
+                android:id="@+id/count3"
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"	        	
+	        	android:layout_margin="@dimen/modal_chooseroomcount_text_margin"
+	        	android:clickable="true"
+	        	android:onClick="clickedCount"
+	        	android:text="3"
+	        	android:textColor="@drawable/modalhighlighttext"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/modal_choosetime_time_textSize"
+	        	android:background="@drawable/modalhighlightbackground" />
+            <TextView 
+                android:id="@+id/count4"
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"	        	
+	        	android:layout_margin="@dimen/modal_chooseroomcount_text_margin"
+	        	android:clickable="true"
+	        	android:onClick="clickedCount"
+	        	android:text="4"
+	        	android:textColor="@drawable/modalhighlighttext"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/modal_choosetime_time_textSize"
+	        	android:background="@drawable/modalhighlightbackground" />
+            <TextView 
+                android:id="@+id/count5"
+                android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"	        	
+	        	android:layout_margin="@dimen/modal_chooseroomcount_text_margin"
+	        	android:clickable="true"
+	        	android:onClick="clickedCount"
+	        	android:text="5"
+	        	android:textColor="@drawable/modalhighlighttext"
+	        	android:gravity="center"
+	        	android:textSize="@dimen/modal_choosetime_time_textSize"
+	        	android:background="@drawable/modalhighlightbackground" />
+	    </LinearLayout>
+
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp"
+	    	android:layout_marginTop="25dp"  
+	    	android:layout_marginBottom="30dp"
+	    	android:text="@string/cleaning_roomcount_general_description"
+	    	android:textStyle="italic"
+	    	android:gravity="center"
+	        />
+	    
+	    <RelativeLayout android:id="@+id/nextbar"
+	        android:layout_alignParentBottom="true"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:background="#aad259" >
+			<Button 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:text="DONE"
+			    android:textSize="30sp"
+			    android:textColor="#fff"
+			    android:gravity="center"		    
+	            android:onClick="ClickedContinueButton"
+	            android:background="@drawable/continuebutton" />
+		</RelativeLayout>
+	   
+	</LinearLayout>
+    
+    
+	
+</RelativeLayout>

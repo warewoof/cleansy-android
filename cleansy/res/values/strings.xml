@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cleansy</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_continue_string">NEXT</string>    
+    
+    <!-- ************************ -->
+    <!-- OPTIONS ACTIVITY STRINGS -->
+    <!-- ************************ -->
+    <string name="optionsmenubottombuttontext">BACK</string>
+    <string name="optionstitletext">options</string>
+    <string name="optionsbuttonlogout">Logout</string>
+    <string name="optionsbuttonlogin">Login</string>
+    <string name="optionsbuttonexit">Exit</string>
+    <string name="optionsbuttonsettings">Settings</string>
+    <string name="optionsbuttonbalance">Balance</string>
+    <string name="optionsbuttonsupport">Support</string>
+    <string name="optionsbuttonpromotions">Promotions</string>
+    <string name="optionsbuttonshare">Share</string>
+    <string name="optionsbuttonabout">About</string>
+    
+    
+    <!-- ********************** -->
+    <!-- LOGIN ACTIVITY STRINGS -->
+    <!-- ********************** -->
+    <string name="title_activity_login">Sign in</string>
+
+    <string name="screen_login_title">cleansy</string>
+    <string name="button_login_string">Returning Customer</string>
+    <string name="email_hint_text">email</string>
+    <string name="password_hint_text">password</string>
+    <string name="password_retype_hint_text">re-type password</string>
+    <string name="skip_login_text">New Customer</string>
+    <string name="login_proceed_button">LOGIN</string>
+    
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Invalid username or password</string>
+    <string name="error_field_required">This field is required</string>
+    
+    
+    <!-- **************************** -->
+    <!-- APPOINTMENT ACTIVITY STRINGS -->
+    <!-- **************************** -->
+    <string name="appointment_title_bar_text">cleansy</string>
+    <string name="appointment_next_button_text">NEXT</string>
+    <string name="wheretext"><b><u>Where</u></b> do you want us to clean?</string>
+    <string name="appointment_address_button_text"><i>Enter your address</i></string>
+    <string name="appointment_date_button_text"><i>Choose a time</i></string>
+    <string name="whentext"><b><u>When</u></b> do you want us to clean?</string>
+    <string name="appointment_time_button_text"><i>Pick a Time</i></string>
+    
+	<!-- address entry modal -->
+    <string name="modal_address_entry_bottom_note"><i>any additional notes such as gate location, key location (if no one is home), presence of large pets, etc.</i></string>    
+    <string name="street1hint"><i>street</i></string>
+    <string name="street2hint"><i>apt#/bldg#/etc</i></string>
+    <string name="cityhint"><i>city</i></string>
+    <string name="postalhint"><i>5-digit zipcode</i></string>
+    <string name="noteshint"><i>optional notes</i></string>
+    
+    <!-- date select modal -->
+    <string name="modal_date_select_bottom_button">NEXT</string>
+    
+    <!-- toast messages -->
+    <string name="missingaddressinfo">Please enter an address</string>
+    <string name="missingscheduleinfo">Please schedule a cleaning time</string>
+    
+    
+    <!-- ************************* -->
+    <!-- CLEANING ACTIVITY STRINGS -->
+    <!-- ************************* -->
+    <string name="cleaning_cleaning_1stsection_text">cleaning information</string>
+    <string name="cleaning_bedroom_count"><i># of bedrooms</i></string>
+    <string name="cleaning_bedroom_count_description"><i>(bedrooms, living rooms, kitchen, etc)</i></string>
+    <string name="cleaning_bathroom_count"><i># of bathrooms</i></string>
+    <string name="cleaning_bathroom_count_description"><i>(including half bathrooms)</i></string>
+    
+    <string name="cleaning_roomcount_no_of_bedroom_text">number of bedrooms</string>
+    <string name="cleaning_roomcount_no_of_bathroom_text">number of bathrooms</string>
+    <string name="cleaning_roomcount_general_description">some text here to describe how to evaluate what constitutes a \'room\' and how cleaning is calculated based on this estimate</string>
+    
+    
+    <string name="cleaning_cleaning_2ndsection_text">cleaning package</string>
+    <string name="cleaning_moreinfo"><b>\?</b></string>
+    <string name="cleaning_basic_service_text">Basic</string>
+    <string name="cleaning_premium_service_text">Premium</string>
+    
+    <string name="servicedescriptionsection1text">This is the first section of text where we can explain the features of basic level service.</string>
+    <string name="servicedescriptionsection2text">This is the second section of text where we can explain the features of premium level service.</string>
+    <string name="servicedescriptionsection3text">This is the third section of text for additional notes.</string>
+    
+    <string name="cleaning_getquote_general_error">Unable to get a quote at this time</string>
+    <string name="incrementsymbol"><b>+</b></string>
+    <string name="decrementsymbol"><b>-</b></string>
+    
+    
+    <!-- ********************** -->
+    <!-- QUOTE ACTIVITY STRINGS -->
+    <!-- ********************** -->
+    <string name="quote_left_button_text">Available</string>
+    <string name="quote_right_button_text">Hidden</string>
+    <string name="quote_registration_button_text">Enter contact information</string>
+    <string name="missingregistrationinfo">Please enter your contact information</string>
+    
+    <!-- contact info modal -->
+    <string name="contactfullnamehint">contact person name</string>
+    <string name="contactfirstnamehint">first name</string>
+    <string name="contactlastnamehint">last name</string>
+    <string name="contactemailhint">email address</string>
+    <string name="contactphonehint">phone number</string>
+    <string name="modal_contactaccount_bottom_note"><i>order receipt and booking details will be emailed, and we will call to confirm location and appointment prior to our arrival</i></string>
+    <string name="queryProgress">Getting your quote</string>
+    
+    
+    
+    <!-- ************************ -->
+    <!-- RECEIPT ACTIVITY STRINGS -->
+    <!-- ************************ -->
+    <string name="receipt_next_button_text">OK</string>
+    <string name="receiptsection1text">Payment has been received, and a receipt has been emailed to you.  We appreciate you booking with Cleansy! </string>
+    <string name="receiptsection2text">Please note that the cleaner will call prior to arrival for reconfirmation</string>
+    <string name="receiptsection3text">For any issues/questions feel free to message or call us at 800&#8211;555&#8211;2828.</string>
+    <string name="receiptsection4text">Your order number is:  5G32D</string>
+    <string name="receiptsection5text">It\'s easy to register now to save time and money on your next cleaning appointment!</string>
+    <string name="receiptsectionregisterbuttontext">Register</string>
+    
+    <!-- contact info modal -->
+    <string name="registerfirstnamehint">first name</string>
+    <string name="registerlastnamehint">last name</string>
+    <string name="registeremailhint">email address</string>
+    <string name="registerphonehint">phone number</string>
+    <string name="modal_registeraccount_bottom_note"><i>register by choosing a password, so the next time you login your address and contact information will be prefilled</i></string>
+   
+</resources>

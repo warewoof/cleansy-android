@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity" >
+
+    <ImageView
+        android:id="@+id/chooseaddressscreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/whitebackground" />
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/activity_title_bar_background" >
+
+        <ImageView
+            android:id="@+id/gearbutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:clickable="true"
+            android:onClick="ClickedOptionsMenuButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/gearbutton" />
+
+        <TextView
+            android:id="@+id/customTitleFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/appointment_title_bar_text"
+            android:textColor="@color/activity_title_bar_text"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nextbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/activity_bottom_bar" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/continuebutton"
+            android:gravity="center"
+            android:onClick="ClickedContinueButton"
+            android:text="@string/appointment_next_button_text"
+            android:textColor="@color/activity_bottom_bar_text"
+            android:textSize="@dimen/activity_bottom_bar_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentarea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/titlebar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                <ImageView
+                    android:id="@+id/wheretextline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/activity_area_text_line_color" />
+
+                <TextView
+                    android:id="@+id/wheretext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="0dp"
+                    android:background="#fff"
+                    android:paddingLeft="@dimen/appointment_area_text_padding_leftright"
+                    android:paddingRight="@dimen/appointment_area_text_padding_leftright"
+                    android:text="@string/wheretext"
+                    android:textColor="@color/activity_area_text_color"
+                    android:textSize="@dimen/appointment_area_text_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/manualaddressbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/greenbutton"
+                android:gravity="center"
+                android:onClick="ClickedManualAddressButton"
+                android:paddingLeft="@dimen/appointment_buttons_left_padding"
+                android:singleLine="true"
+                android:text="@string/appointment_address_button_text"
+                android:textColor="@color/appointment_buttons_text_color"
+                android:textSize="@dimen/appointment_buttons_text_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/strut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strut"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/whentextline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/activity_area_text_line_color" />
+
+                <TextView
+                    android:id="@+id/whentext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="0dp"
+                    android:background="#fff"
+                    android:paddingLeft="@dimen/appointment_area_text_padding_leftright"
+                    android:paddingRight="@dimen/appointment_area_text_padding_leftright"
+                    android:text="@string/whentext"
+                    android:textColor="@color/activity_area_text_color"
+                    android:textSize="@dimen/appointment_area_text_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/datepickbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/greenbutton"
+                android:gravity="center"
+                android:onClick="ClickedDatePickButton"
+                android:paddingLeft="@dimen/appointment_buttons_left_padding"
+                android:singleLine="true"
+                android:text="@string/appointment_date_button_text"
+                android:textColor="@color/appointment_buttons_text_color"
+                android:textSize="@dimen/appointment_buttons_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

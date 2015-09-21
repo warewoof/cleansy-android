@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- general activity settings -->
+    <color name="activity_title_bar_background">#c2ef68</color>
+    <color name="activity_title_bar_text">#65891d</color>
+    <color name="activity_bottom_bar">#aad259</color>
+    <color name="activity_bottom_bar_text">#fff</color>
+    <color name="hintColor">#aaa</color>
+    
+    <color name="activity_area_text_color">#444</color>
+    <color name="activity_area_text_line_color">#aad259</color>
+    
+    <color name="defaultGreenButtonUp">#ccff66</color>
+    <color name="defaultGreenButtonDown">#e4ffad</color>
+    <color name="defaultGreenButtonBorder">#65891d</color>
+    <color name="disabledButton">#c0c0c0</color>
+    <color name="disabledButtonBorder">#444</color>
+    
+    
+    <color name="radiobuttonup">#c0c0c0</color>
+    <color name="radiobuttonupborder">#65891d</color>
+    <color name="radiobuttondown">#ccff66</color>
+    <color name="radiobuttondownborder">#65891d</color>
+    
+    <color name="pickerbuttonup">#ccff66</color>
+    <color name="pickerbuttonupborder">#65891d</color>
+    <color name="pickerbuttondown">#bbb</color>
+    <color name="pickerbuttondownborder">#65891d</color>
+    <color name="pickerdisplay">#eee</color>
+    <color name="pickerdisplaytext">#222</color>
+    <color name="pickerdisplayborder">#65891d</color>
+    <color name="pickersymbolcolor">#65891d</color>
+    
+    <color name="progressspinner">#ffffff</color>
+    
+    <!-- general modal settings -->
+    <color name="modalActivityBackground">#a0000000</color>
+    
+    <!-- options activity settings -->
+    <color name="options_buttons_text_color">#333</color>
+    <color name="options_area_text_color">#444</color>
+    <color name="options_area_text_line_color">#aad259</color>
+    
+    
+    <!-- ******************** -->
+    <!-- APPOINTMENT ACTIVITY -->
+    <!-- ******************** -->
+    
+    <!-- appointment activity settings -->
+    <color name="appointment_buttons_text_color">#333</color>
+    
+    
+    <!-- appointment time picker modal settings -->
+    <color name="modal_choosetime_timecolortextdefault">#777777</color>
+    <color name="modal_choosetime_timecolortexthighlight">#ffffff</color>
+    <color name="modal_choosetime_timecolorbackgrounddefault">#ffffff</color>
+    <color name="modal_choosetime_timecolorbackgroundhighlight">#aad259</color>
+    
+    
+    <!-- ***************** -->
+    <!-- CLEANING ACTIVITY -->
+    <!-- ***************** -->
+    <color name="cleaning_button_text_color">#333333</color>
+    <color name="cleaning_question_mark_border">#65891d</color>
+    <color name="cleaning_question_mark">#65891d</color>
+    
+    <color name="cleaning_service_description_text">#808080</color>
+    
+    <!-- ************** -->
+    <!-- QUOTE ACTIVITY -->
+    <!-- ************** -->
+    <color name="progressmessagebackground">#aa777777</color>
+    
+    
+</resources>

@@ -1,0 +1,22 @@
+1401379522571	Rename resource 'chooseaddressscreen.xml'
+1401379540863	Rename resource 'confirmquotescreen.xml'
+1401379801120	Rename resource 'choosecleaningscreen.xml'
+1401379977843	Rename resource 'splashscreen.xml'
+1401380000911	Rename resource 'summaryscreen.xml'
+1401385385513	Rename resource 'Noteworthy-Bold.otf'
+1401478371809	Delete element
+1401478377678	Delete element
+1401478418200	Delete element
+1401478424667	Delete element
+1401485608792	Delete element
+1401519137599	Copy folder
+1401554339234	Delete element
+1401554365412	Delete element
+1401554460672	Copy file
+1401554481723	Rename type 'ChooseAddressActivity'
+1401554519527	Rename type 'ChooseCleaningActivity'
+1401554531855	Rename type 'ConfirmQuoteActivity'
+1401554747245	Rename resource 'screen_appointmentdetails.xml'
+1401555487376	Delete element
+1401578316903	Rename type 'ChooseAddressManualModal'
+1401578363903	Rename resource 'modal_chooseaddressmanual.xml'

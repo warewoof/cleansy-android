@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <solid android:color="@color/modal_choosetime_timecolorbackgroundhighlight"></solid>
+
+            <padding android:bottom="5dp" android:left="10dp" android:right="10dp" android:top="5dp"></padding>
+        </shape></item>
+    <item android:state_selected="true"><shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <solid android:color="@color/modal_choosetime_timecolorbackgroundhighlight"></solid>
+
+            <padding android:bottom="5dp" android:left="10dp" android:right="10dp" android:top="5dp"></padding>
+        </shape></item>
+    <item><shape android:shape="rectangle">
+            <solid android:color="@color/modal_choosetime_timecolorbackgrounddefault"></solid>
+
+            <padding android:bottom="5dp" android:left="10dp" android:right="10dp" android:top="5dp"></padding>
+        </shape></item>
+
+</selector>

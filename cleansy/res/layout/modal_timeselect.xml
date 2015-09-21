@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout 
+	    android:id="@+id/contentarea"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="40dp"
+	    android:layout_marginBottom="40dp"
+	    android:background="#fff"	    
+        android:layout_alignParentTop="true" >
+	    
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="50dp" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content" >
+	    <RelativeLayout 
+	        android:id="@+id/headertext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	       	android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp" >
+	        <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="15dp"
+	            android:background="#aad259" />
+	    	<TextView 
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="choose time"
+	    	    android:textColor="#333"
+	    	    android:textSize="17sp"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginTop="2dp"
+	    	    android:layout_marginLeft="40dp"
+	    	    android:paddingLeft="4dp"
+	    	    android:paddingRight="4dp"
+	    	    android:background="#fff"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/headertext"
+	        android:layout_marginTop="20dp"
+	       	android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp"
+	    	android:orientation="horizontal" >
+	    	
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_weight="1"
+		    	android:layout_marginRight="2dp" >
+	            <TextView 
+	                android:id="@+id/t1000AM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"		        	
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="10:00AM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView
+	                android:id="@+id/t1030AM" 
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="10:30AM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t1100AM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="11:00AM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t1130AM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"		        	
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="11:30AM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t1200PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="12:00PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t1230PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="12:30PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t100PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="1:00PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t130PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="1:30PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	        </LinearLayout>
+
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		    	android:orientation="vertical"
+		    	android:layout_weight="1"
+		    	android:layout_marginLeft="2dp" >
+	            <TextView 
+	                android:id="@+id/t200PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"		        	
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="2:00PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t230PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="2:30PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t300PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="3:00PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t330PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"		        	
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="3:30PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t400PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="4:00PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t430PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="4:30PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t500PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="true"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="5:00PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	            <TextView 
+	                android:id="@+id/t530PM"
+	                android:layout_width="fill_parent"
+		        	android:layout_height="wrap_content"
+		        	android:layout_marginBottom="@dimen/modal_choosetime_time_marginBottom"
+		        	android:focusable="false"
+		        	android:focusableInTouchMode="false"
+		        	android:clickable="true"
+		        	android:onClick="ClickedTime"
+		        	android:text="5:30PM"
+		        	android:textColor="@color/modal_choosetime_timecolortextdefault"
+		        	android:gravity="center"
+		        	android:textSize="@dimen/modal_choosetime_time_textSize"
+		        	android:background="@drawable/timeselectfield" />
+	        </LinearLayout>	        
+	    </LinearLayout>
+	    </RelativeLayout>
+	    </ScrollView>
+	    
+	    <RelativeLayout android:id="@+id/nextbar"
+	        android:layout_alignParentBottom="true"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:background="#aad259" >
+			<Button 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:text="DONE"
+			    android:textSize="30sp"
+			    android:textColor="#fff"
+			    android:gravity="center"		    
+	            android:onClick="ClickedContinueButton"
+	            android:background="@drawable/continuebutton" />
+		</RelativeLayout>
+	   
+	</RelativeLayout>
+    
+    
+	
+</RelativeLayout>

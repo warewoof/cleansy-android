@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/contentarea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#fff" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/activity_bottom_bar_height" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+	    			android:layout_marginRight="20dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     >
+
+                    <ImageView
+                        android:id="@+id/optionstitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/activity_area_text_line_color" />
+
+                    <TextView
+                        android:id="@+id/wheretext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="2dp"
+                        android:background="#fff"
+                        android:paddingLeft="@dimen/appointment_area_text_padding_leftright"
+                        android:paddingRight="@dimen/appointment_area_text_padding_leftright"
+                        android:text="@string/optionstitletext"
+                        android:textColor="@color/activity_area_text_color"
+                        android:textSize="@dimen/appointment_area_text_size" />
+                </RelativeLayout>
+                
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/servicedescriptionsection1text"
+                    android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                    android:textSize="@dimen/cleaning_servicedescription_text_size"
+                    android:textColor="@color/cleaning_service_description_text" />
+                
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/servicedescriptionsection2text"
+                    android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                    android:textSize="@dimen/cleaning_servicedescription_text_size"
+                    android:textColor="@color/cleaning_service_description_text" />
+                
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/servicedescriptionsection3text"
+                    android:layout_marginTop="@dimen/cleaning_servicedescription_text_top_margin"
+                    android:textSize="@dimen/cleaning_servicedescription_text_size"
+                    android:textColor="@color/cleaning_service_description_text" />
+             
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/nextbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/activity_bottom_bar"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_bottom_bar_height"
+                android:background="@drawable/continuebutton"
+                android:gravity="center"
+                android:onClick="ClickedContinueButton"
+                android:text="@string/optionsmenubottombuttontext"
+                android:textColor="@color/activity_bottom_bar_text"
+                android:textSize="@dimen/activity_bottom_bar_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,388 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity" >
+
+    <ImageView
+        android:id="@+id/chooseaddressscreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/whitebackground" />
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/activity_title_bar_background" >
+
+        <ImageView
+            android:id="@+id/gearbutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:clickable="true"
+            android:onClick="ClickedOptionsMenuButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/gearbutton" />
+
+        <TextView
+            android:id="@+id/customTitleFont"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/appointment_title_bar_text"
+            android:textColor="@color/activity_title_bar_text"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nextbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/activity_bottom_bar"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/graybackbutton"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="ClickedBackButton"
+            android:src="@drawable/nextarrow" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="@drawable/continuebutton"
+            android:gravity="center"
+            android:onClick="ClickedContinueButton"
+            android:text="@string/button_continue_string"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_bottom_bar_height"
+        android:layout_marginTop="@dimen/activity_title_bar_height" >
+
+        <LinearLayout
+            android:id="@+id/contentArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/activity_area_text_line_color" />
+
+                <TextView
+                    android:id="@+id/cleaning_1stsection_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="#fff"
+                    android:paddingLeft="@dimen/cleaning_area_text_padding_leftright"
+                    android:paddingRight="@dimen/cleaning_area_text_padding_leftright"
+                    android:text="@string/cleaning_cleaning_1stsection_text"
+                    android:textColor="@color/activity_area_text_color"
+                    android:textSize="@dimen/cleaning_area_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:paddingLeft="44dp"
+                android:singleLine="true"
+                android:text="@string/cleaning_bedroom_count"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="44dp"
+                android:singleLine="true"
+                android:text="@string/cleaning_bedroom_count_description"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bedroomsubbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pickerleftbutton"
+                    android:gravity="center"
+                    android:onClick="clickedPickerButton"
+                    android:text="@string/decrementsymbol"
+                    android:textColor="@color/pickersymbolcolor"
+                    android:textSize="@dimen/cleaning_button_text_size" />
+
+                <TextView
+                    android:id="@+id/bedroomCountDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/pickercenterdisplay"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:textColor="@color/pickerdisplaytext"
+                    android:textSize="@dimen/pickerdisplaytextsize"
+                    android:textStyle="italic|bold" />
+
+                <Button
+                    android:id="@+id/bedroomaddbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pickerrightbutton"
+                    android:gravity="center"
+                    android:onClick="clickedPickerButton"
+                    android:text="@string/incrementsymbol"
+                    android:textColor="@color/pickersymbolcolor"
+                    android:textSize="@dimen/cleaning_button_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:paddingLeft="44dp"
+                android:singleLine="true"
+                android:text="@string/cleaning_bathroom_count"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="44dp"
+                android:singleLine="true"
+                android:text="@string/cleaning_bathroom_count_description"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bathroomsubbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pickerleftbutton"
+                    android:gravity="center"
+                    android:onClick="clickedPickerButton"
+                    android:text="@string/decrementsymbol"
+                    android:textColor="@color/pickersymbolcolor"
+                    android:textSize="@dimen/cleaning_button_text_size" />
+
+                <TextView
+                    android:id="@+id/bathroomCountDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/pickercenterdisplay"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:textColor="@color/pickerdisplaytext"
+                    android:textSize="@dimen/pickerdisplaytextsize"
+                    android:textStyle="italic|bold" />
+
+                <Button
+                    android:id="@+id/bathroomaddbutton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pickerrightbutton"
+                    android:gravity="center"
+                    android:onClick="clickedPickerButton"
+                    android:text="@string/incrementsymbol"
+                    android:textColor="@color/pickersymbolcolor"
+                    android:textSize="@dimen/cleaning_button_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/activity_area_text_line_color" />
+
+                <TextView
+                    android:id="@+id/cleaning_2stsection_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="#fff"
+                    android:paddingLeft="@dimen/cleaning_area_text_padding_leftright"
+                    android:paddingRight="@dimen/cleaning_area_text_padding_leftright"
+                    android:text="@string/cleaning_cleaning_2ndsection_text"
+                    android:textColor="@color/activity_area_text_color"
+                    android:textSize="@dimen/cleaning_area_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="28dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/cleaning_2stsection_text"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:onClick="ClickedQuestionButton" >
+
+                    <RelativeLayout
+                        android:id="@+id/circletextborderlayout"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/circletextborder"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/cleaning_moreinfo"
+                            android:textColor="@color/cleaning_question_mark"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/cleaningbutton1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radioleftbutton"
+                    android:gravity="center"
+                    android:onClick="ClickedButtonBasic"
+                    android:text="@string/cleaning_basic_service_text"
+                    android:textColor="@color/cleaning_button_text_color"
+                    android:textSize="@dimen/cleaning_button_text_size" />
+
+                <Button
+                    android:id="@+id/cleaningbutton2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radiorightbutton"
+                    android:gravity="center"
+                    android:onClick="ClickedButtonPremium"
+                    android:text="@string/cleaning_premium_service_text"
+                    android:textColor="@color/cleaning_button_text_color"
+                    android:textSize="@dimen/cleaning_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/queryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/progressmessagebackground"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone" >
+
+        <!--
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+        -->
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progressspinnercustom" />
+
+        <TextView
+            android:id="@+id/queryStatusMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/queryProgress"
+            android:textColor="@color/progressspinner"
+            android:textSize="@dimen/progressspinnertext" />
+    </LinearLayout>
+
+</RelativeLayout>

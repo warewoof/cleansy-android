@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.warewoof.cleansydemo.R"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansydemo.Global"/>
+<fullyQualifiedTypeName name="android.view.View.OnKeyListener"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansydemo.Functions"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="android.text.format.DateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansy.R.color"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="bin.classes.com.jeremyfeinstein.slidingmenu.lib.R"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansydemo.screens.AppointmentActivity"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentTransaction"/>
+<fullyQualifiedTypeName name="android.view.Menu"/>
+<fullyQualifiedTypeName name="android.view.MenuItem"/>
+<fullyQualifiedTypeName name="com.actionbarsherlock.view.Menu"/>
+<fullyQualifiedTypeName name="com.actionbarsherlock.view.MenuItem"/>
+<fullyQualifiedTypeName name="android.view.ViewGroup.LayoutParams"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansydemo.menu.MenuItems"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.support.v4.app.ListFragment"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansy.R.drawable"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansy.R.string"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansydemo.screens.LoginActivity"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansy.R.id"/>
+<fullyQualifiedTypeName name="com.warewoof.cleansy.R"/>
+</qualifiedTypeNameHistroy>

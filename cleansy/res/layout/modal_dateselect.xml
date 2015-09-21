@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout 
+	    android:id="@+id/contentarea"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="40dp"
+	    android:layout_marginBottom="40dp"
+	    android:background="#fff"	    
+        android:layout_alignParentTop="true" >
+	    
+	    <RelativeLayout 
+	        android:id="@+id/headertext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	       	android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp" >
+	        <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="15dp"
+	            android:background="#aad259" />
+	    	<TextView 
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="choose date"
+	    	    android:textColor="#333"
+	    	    android:textSize="17sp"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginTop="2dp"
+	    	    android:layout_marginLeft="40dp"
+	    	    android:paddingLeft="4dp"
+	    	    android:paddingRight="4dp"
+	    	    android:background="#fff"/>
+	    </RelativeLayout>
+	    
+	    <com.squareup.timessquare.CalendarPickerView
+		    android:id="@+id/calendar_view"
+		    android:layout_below="@id/headertext"
+		    android:layout_above="@id/nextbar"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="10dp"
+	    	android:paddingRight="5dp"
+	    	android:paddingBottom="10dp"
+	    	android:scrollbarStyle="outsideInset" />
+	    
+	    <RelativeLayout android:id="@+id/nextbar"
+	        android:layout_alignParentBottom="true"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:background="#aad259" >
+			<Button 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:text="@string/modal_date_select_bottom_button"
+			    android:textSize="30sp"
+			    android:textColor="#fff"
+			    android:gravity="center"		    
+	            android:onClick="ClickedContinueButton"
+	            android:background="@drawable/continuebutton" />
+		</RelativeLayout>
+	   
+	</RelativeLayout>
+    
+    
+	
+</RelativeLayout>

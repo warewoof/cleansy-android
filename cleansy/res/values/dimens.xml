@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- general activity settings -->
+    <dimen name="activity_title_bar_height">50dp</dimen>
+    <dimen name="activity_title_bar_text_size">26sp</dimen>
+    <dimen name="activity_bottom_bar_height">50dp</dimen>
+    <dimen name="activity_bottom_bar_text_size">30sp</dimen>
+    
+    <dimen name="activity_area_text_size">18sp</dimen>
+    <dimen name="activity_area_text_padding_leftright">8dp</dimen>
+    
+    <dimen name="progressspinnertext">18dp</dimen>
+    
+    <!-- options activity settings -->
+    <dimen name="options_buttons_text_size">18sp</dimen>
+    
+    
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    
+    
+    
+    
+    <!-- ******************** -->
+    <!-- APPOINTMENT ACTIVITY -->
+    <!-- ******************** -->
+    <dimen name="appointment_buttons_text_size">16sp</dimen>
+    <dimen name="appointment_buttons_left_padding">15dp</dimen>
+    <dimen name="appointment_area_text_size">18sp</dimen>
+    <dimen name="appointment_area_text_padding_leftright">8dp</dimen>
+    
+    <dimen name="modal_chooseaddressmanual_edit_text_field_padding">7dp</dimen>
+    <dimen name="modal_choosetime_time_textSize">20sp</dimen>
+    <dimen name="modal_choosetime_time_marginBottom">5dp</dimen>    
+    <dimen name="modal_chooseroomcount_text_margin">2dp</dimen>
+    
+	<!-- ***************** -->
+    <!-- CLEANING ACTIVITY -->
+    <!-- ***************** -->
+    <dimen name="cleaning_button_text_size">16sp</dimen>
+    <dimen name="cleaning_area_text_size">18sp</dimen>
+    <dimen name="cleaning_area_text_padding_leftright">8dp</dimen>
+    
+    <dimen name="cleaning_servicedescription_text_top_margin">20dp</dimen>
+    <dimen name="cleaning_servicedescription_text_size">18sp</dimen>
+    <dimen name="pickerdisplaytextsize">16sp</dimen>
+</resources>

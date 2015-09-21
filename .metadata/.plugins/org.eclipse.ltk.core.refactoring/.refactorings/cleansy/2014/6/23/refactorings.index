@@ -1,0 +1,63 @@
+1401583137563	Copy file
+1401583322742	Rename resource 'Copy of modal_address_entry.xml'
+1401598057100	Delete element
+1401599563577	Copy compilation unit
+1401599637284	Delete element
+1401599649952	Rename type 'ChooseDateModal'
+1401599678805	Rename resource 'modal_choosedate.xml'
+1401599691613	Rename resource 'modal_address_entry.xml'
+1401599708488	Copy file
+1401599804977	Delete element
+1401600716843	Rename type 'ChooseTimeModal'
+1401601572333	Copy file
+1401642017901	Rename field 'addressStreet'
+1401644179467	Rename method 'SetAddress'
+1401644193760	Rename method 'SetDate'
+1401644368966	Rename method 'addressCompleted'
+1401644381759	Rename method 'scheduleCompleted'
+1401679341163	Rename method 'isAddresCompleted'
+1401679426923	Delete element
+1401684213979	Rename method 'getDate'
+1401748375609	Rename resource 'modal_choosetime.xml'
+1401768675867	Delete element
+1401768976782	Copy file
+1401769063275	Copy file
+1401769338742	Delete element
+1401769386917	Delete element
+1401769428102	Delete element
+1401770018847	Copy compilation unit
+1401815097558	Delete element
+1401816949907	Copy file
+1401819043026	Rename resource 'screen_cleaningdetails.xml'
+1401827626636	Copy file
+1401827838712	Copy file
+1401827862794	Copy file
+1401827890883	Copy file
+1401827943860	Copy file
+1401827986232	Copy file
+1401856476968	Copy compilation unit
+1401856609160	Copy file
+1401893445421	Rename type 'ChooseRoomCountModal'
+1401894289991	Rename method 'HighlightTime'
+1401894315591	Rename method 'ClickedCount'
+1401894596708	Rename method 'UnhighlightTime'
+1401904129652	Copy file
+1401904197574	Copy file
+1401904488342	Delete element
+1401904569972	Rename resource 'modaltexthighlight.xml'
+1401904581020	Copy file
+1401904649721	Rename resource 'modalhighlight.xml'
+1401904784303	Rename resource 'modal_chooseroomcount.xml'
+1401927443201	Rename type 'UserLoginTask'
+1401929248266	Rename method 'attemptLogin'
+1401934285063	Copy files
+1401934291843	Copy files
+1401941393808	Delete element
+1402084101166	Rename method 'getEstimatedTime'
+1402088329053	Rename method 'getEsimatedCostAsString'
+1402095993779	Copy file
+1402096016923	Rename type 'SummaryScreenActivity'
+1402096046026	Rename type 'ThankYouActivity'
+1402096056394	Rename resource 'screen_thankyou.xml'
+1402177669688	Copy compilation unit
+1402177793762	Copy file

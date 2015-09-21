@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity" >
+
+    
+	<ImageView android:id="@+id/chooseaddressscreen"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:src="@drawable/whitebackground" 
+		android:layout_gravity="center"
+		android:scaleType="fitXY" />
+	<RelativeLayout android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#c2ef68"
+        android:layout_alignParentTop="true" >
+		<ImageView android:id="@+id/gearbutton"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp"
+	        android:src="@drawable/gearbutton"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:scaleType="fitXY"
+	        android:layout_marginTop="9dp"
+	        android:layout_marginLeft="9dp"
+	        android:clickable="true"
+	        android:onClick="ClickedOptionsMenuButton" />
+		<TextView
+		    android:id="@+id/customTitleFont"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="@string/app_name"
+		    android:textSize="@dimen/activity_title_bar_text_size"
+		    android:textColor="@color/activity_title_bar_text"
+		    android:gravity="center" />
+	</RelativeLayout>
+	
+	<LinearLayout android:id="@+id/nextbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#aad259"
+        android:layout_alignParentBottom="true" >
+		<ImageView 
+		    android:layout_weight="1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:gravity="center"		   
+		    android:clickable="true" 
+            android:onClick="ClickedBackButton"
+            android:background="@drawable/graybackbutton"
+            android:src="@drawable/nextarrow" />
+		<Button 
+		    android:layout_weight="4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="fill_parent"
+		    android:text="@string/button_continue_string"
+		    android:textSize="30sp"
+		    android:textColor="#fff"
+		    android:gravity="center"		    
+            android:onClick="ClickedContinueButton"
+            android:background="@drawable/continuebutton" />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/contentarea"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/titlebar"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" >
+	    
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp">
+	        <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="15dp"
+	            android:background="@color/activity_area_text_line_color" />
+	    	<TextView 
+	    	    android:id="@+id/quote_1stsection_title"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="price"
+	    	    android:textColor="@color/activity_area_text_color"
+	    	    android:textSize="@dimen/activity_area_text_size"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginLeft="40dp"
+	    	    android:paddingLeft="@dimen/activity_area_text_padding_leftright"
+	    	    android:paddingRight="@dimen/activity_area_text_padding_leftright"
+	    	    android:background="#fff"/>
+	    </RelativeLayout>
+	    
+	    <TextView
+	        android:id="@+id/quoteprice"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingLeft="44dp"
+            android:singleLine="true"
+            android:text="$90"
+            android:textSize="80sp"
+            android:textStyle="italic"
+            android:textColor="#333" />
+	    
+	    <TextView
+	        android:id="@+id/quotetime"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="44dp"
+            android:singleLine="true"
+            android:text="estimated time will be 3 hours"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#333" />
+	    <!-- 
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp">
+	        <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="15dp"
+	            android:background="@color/activity_area_text_line_color" />
+	    	<TextView 
+	    	    android:id="@+id/quote_2ndsection_title"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="key location"
+	    	    android:textColor="@color/activity_area_text_color"
+	    	    android:textSize="@dimen/activity_area_text_size"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginLeft="40dp"
+	    	    android:paddingLeft="@dimen/activity_area_text_padding_leftright"
+	    	    android:paddingRight="@dimen/activity_area_text_padding_leftright"
+	    	    android:background="#fff"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/quotebuttonleft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radioleftbutton"
+                android:gravity="center"
+                android:onClick="ClickedButtonKeyLeft"
+                android:text="@string/quote_left_button_text"
+                android:textColor="@color/cleaning_button_text_color"
+                android:textSize="@dimen/cleaning_button_text_size" />
+
+            <Button
+                android:id="@+id/quotebuttonright"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radiorightbutton"
+                android:gravity="center"
+                android:onClick="ClickedButtonKeyRight"
+                android:text="@string/quote_right_button_text"
+                android:textColor="@color/cleaning_button_text_color"
+                android:textSize="@dimen/cleaning_button_text_size" />
+        </LinearLayout>
+	    -->
+	    <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp">
+	        <ImageView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="15dp"
+	            android:background="@color/activity_area_text_line_color" />
+	    	<TextView 
+	    	    android:id="@+id/quote_3ndsection_title"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="contact information"
+	    	    android:textColor="@color/activity_area_text_color"
+	    	    android:textSize="@dimen/activity_area_text_size"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginLeft="40dp"
+	    	    android:paddingLeft="@dimen/activity_area_text_padding_leftright"
+	    	    android:paddingRight="@dimen/activity_area_text_padding_leftright"
+	    	    android:background="#fff"/>
+	    </RelativeLayout>
+	    
+	    <Button
+                android:id="@+id/registrationbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginRight="44dp"
+                android:background="@drawable/greenbutton"
+                android:gravity="center"
+                android:onClick="ClickedContactInfoButton"
+                android:singleLine="true"
+                android:text="@string/quote_registration_button_text"
+                android:textColor="@color/appointment_buttons_text_color"
+                android:textSize="@dimen/appointment_buttons_text_size" />
+	    
+	</LinearLayout>
+</RelativeLayout>
