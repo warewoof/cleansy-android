@@ -1,5 +1,5 @@
 # cleansy-android
-On-demand cleaning service proof of concept
+On-demand cleaning service proof of concept that was never published to the app store
 
 App can be installed by side-loading APK included in root
 
